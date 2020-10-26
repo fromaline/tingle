@@ -1,4 +1,3 @@
-
 ![Logo Tingle](logo.png)
 
 ## Documentation
@@ -10,19 +9,19 @@ Documentation and demo can be found here:
 
 Tingle is a minimalist and easy-to-use modal plugin written in pure JavaScript:
 
-* No dependencies required
-* Fully customizable via CSS
-* CSS transitions
-* Simple API
-* No extra files to download
-* Created with UX in mind
+- No dependencies required
+- Fully customizable via CSS
+- CSS transitions
+- Simple API
+- No extra files to download
+- Created with UX in mind
 
 ## Roadmap
 
-* ~~Flexbox support~~
-* ~~Better responsive~~
-* alert/dialog
-* Accessibility (any help is welcome)
+- ~~Flexbox support~~
+- ~~Better responsive~~
+- alert/dialog
+- Accessibility (any help is welcome)
 
 ## Contribute
 
@@ -34,6 +33,10 @@ $ cd tingle
 $ npm install
 $ gulp serve
 ```
+
+## Development tools
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 ## License
 

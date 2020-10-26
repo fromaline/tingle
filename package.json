@@ -2,7 +2,9 @@
   "name": "tingle.js",
   "version": "0.15.3",
   "description": "A simple modal plugin written in pure JavaScript",
-  "main": "dist/tingle.min.js",
+  "main": "dist/tingle.js",
+  "cdn": "dist/tingle.min.js",
+  "module": "dist/tingle.es.js",
   "directories": {
     "doc": "doc"
   },
@@ -14,25 +16,24 @@
     "popin",
     "lightbox"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-gh-pages": "^0.5.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^3.0.2"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "rollup": "^2.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-filesize": "^9.0.2",
+    "rollup-plugin-serve": "^1.0.4",
+    "rollup-plugin-styles": "^3.11.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "standard": "^15.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint src/**.js"
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
